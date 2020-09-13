@@ -31,7 +31,7 @@ $(document).ready(function(){
 function setendpic()
 {
 	temp=picnum*(picnum-1)-1;
-	$('#'+temp).css("background-image","url(/_"+(picnum-2)*(picnum-2)+".jpg)")
+	$('#'+temp).css("background-image","url(PicGame/img/_"+(picnum-2)*(picnum-2)+".jpg)")
 }
 function iskong(id)//判断改标签是否为空
 {
@@ -113,7 +113,7 @@ function init()//初始化图片
 			if(id>picnum*i+1&&id<picnum*(i+1))
 		{
 			$('#'+id).css("background-size","cover");
-			$('#'+id).css("background-image","url("_0"+pic+".jpg")");
+			$('#'+id).css("background-image","url(PicGame/img/+"_0"+pic+".jpg")");
 			if(id==((picnum-1)*picnum)-1)
 			{
 				$('#'+id).css("background-image","none");
@@ -156,7 +156,7 @@ function startgame()//开始游戏，打乱图片顺序
 		{
 			if(id>picnum*i+1&&id<picnum*(i+1))
 		{
-			var temp=$('#'+id).css("background-image","url(_0"+a_num[K]+".jpg)");
+			var temp=$('#'+id).css("background-image","url(PicGame/img/_0"+a_num[K]+".jpg)");
 			k++;
 		}
 		}
